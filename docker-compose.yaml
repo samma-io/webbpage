@@ -1,0 +1,19 @@
+version: '2'
+services:
+  hugo:
+    build: .
+    image: mattiashem/hugo:latest
+    volumes:
+      - ./src/:/src/
+      - ./output/:/output
+    ports:
+      - 1313:1313
+  
+  web:
+    image: jojomi/nginx-static
+    volumes:
+      - ./output:/var/www
+    environment:
+      - VIRTUAL_HOST=mydomain.com
+    ports:
+      - 80
