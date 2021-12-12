@@ -1,0 +1,86 @@
+title = "Samma.io"
+baseURL = "https://samma.io"
+languageCode = "en-us"
+theme = "cactus"
+themesDir = "/src/story/themes"
+
+
+
+MetaDataFormat = "yaml"
+DefaultContentLanguage = "en"
+#SectionPagesMenu = "main"
+Paginate = 3 # this is set low for demonstrating with dummy content. Set to a higher number
+googleAnalytics = ""
+enableRobotsTXT = true
+
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[menu.main]]
+name = "Scanners"
+url = "/scanners"
+weight = 2
+
+[[menu.main]]
+name = "Posts"
+url = "/posts"
+weight = 3
+
+[[menu.main]]
+name = "Support"
+url = "/support"
+weight = 4
+
+[[menu.main]]
+name = "About"
+url = "/about"
+weight = 5
+
+
+
+
+[sitemap]
+  changefreq = "monthly"
+  priority = 0.5
+  filename = "sitemap.xml"
+
+[params]
+  colortheme = "dark"
+  favicon = ""
+  description = ""
+  facebook = ""
+  twitter = "https://twitter.com/GoHugoIO"
+  instagram = ""
+  youtube = ""
+  github = ""
+  gitlab = ""
+  linkedin = ""
+  mastodon = ""
+  slack = ""
+  stackoverflow = ""
+  # choose a background color from any on this page: http://tachyons.io/docs/themes/skins/ and preface it with "bg-"
+  background_color_class = "bg-black"
+  featured_image = "/images/gohugo-default-sample-hero-image.jpg"
+  recent_posts_number = 10
+  #logo= "/images/samma_logo.png"
+
+
+  # Home page settings
+  description = "Samma is a set och opensource scanners set toghter to keep you system secure."
+  mainSection = "posts" # your main section
+  showAllPostsOnHomePage = true # default
+  postsOnHomePage = 5 # this option will be ignored if showAllPostsOnHomePage is set to true
+  tagsOverview = false # show tags overview by default.
+  showProjectsList = false # show projects list by default (if projects data file exists).
+
+  [[params.social]]
+    name = "github"
+    link = "https://github.com/samma-io"
+  [[params.social]]
+    name = "linkedin"
+    link = "https://www.linkedin.com/company/github/"
+  [[params.social]]
+    name = "email"
+    link = "matte.hemmingsson@gmail.com"  # no need for "mailto:" in the head

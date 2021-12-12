@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Penterster on Samma.io</title>
+    <link>https://samma.io/tags/penterster/</link>
+    <description>Recent content in Penterster on Samma.io</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 21 Sep 2021 09:00:00 +0000</lastBuildDate><atom:link href="https://samma.io/tags/penterster/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>For Pentesters</title>
+      <link>https://samma.io/posts/2021-09-21-for-pentesters/</link>
+      <pubDate>Tue, 21 Sep 2021 09:00:00 +0000</pubDate>
+      
+      <guid>https://samma.io/posts/2021-09-21-for-pentesters/</guid>
+      <description>How I use the samma scanners to do recon when pentesting I was taskes to to a first pentest against a AWS hosted enviroment. This was a automated test to run before a more advaced pentest was planned. And the goals was to do a quick scan of the assets to catch any low fruits targets and then be able to resove them before the larger pentest was conducted.
+The setup To use a s base for the scanners a deployed a minkube Kubernetes on my local desktop.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Samma.io</title>
+    <link>https://samma.io/categories/</link>
+    <description>Recent content in Categories on Samma.io</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 30 Nov 2021 09:00:00 +0000</lastBuildDate><atom:link href="https://samma.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>localdev</title>
+      <link>https://samma.io/categories/localdev/</link>
+      <pubDate>Tue, 30 Nov 2021 09:00:00 +0000</pubDate>
+      
+      <guid>https://samma.io/categories/localdev/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>scanners</title>
+      <link>https://samma.io/categories/scanners/</link>
+      <pubDate>Tue, 30 Nov 2021 09:00:00 +0000</pubDate>
+      
+      <guid>https://samma.io/categories/scanners/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>k8s</title>
+      <link>https://samma.io/categories/k8s/</link>
+      <pubDate>Tue, 21 Sep 2021 09:00:00 +0000</pubDate>
+      
+      <guid>https://samma.io/categories/k8s/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>minikube</title>
+      <link>https://samma.io/categories/minikube/</link>
+      <pubDate>Tue, 21 Sep 2021 09:00:00 +0000</pubDate>
+      
+      <guid>https://samma.io/categories/minikube/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>on-prem</title>
+      <link>https://samma.io/categories/on-prem/</link>
+      <pubDate>Tue, 21 Sep 2021 09:00:00 +0000</pubDate>
+      
+      <guid>https://samma.io/categories/on-prem/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Devloper</title>
+      <link>https://samma.io/categories/devloper/</link>
+      <pubDate>Sun, 11 Jul 2021 09:00:00 +0000</pubDate>
+      
+      <guid>https://samma.io/categories/devloper/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Gitlab</title>
+      <link>https://samma.io/categories/gitlab/</link>
+      <pubDate>Sun, 11 Jul 2021 09:00:00 +0000</pubDate>
+      
+      <guid>https://samma.io/categories/gitlab/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>AWS</title>
+      <link>https://samma.io/categories/aws/</link>
+      <pubDate>Wed, 02 Jun 2021 09:00:00 +0000</pubDate>
+      
+      <guid>https://samma.io/categories/aws/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cloud</title>
+      <link>https://samma.io/categories/cloud/</link>
+      <pubDate>Wed, 02 Jun 2021 09:00:00 +0000</pubDate>
+      
+      <guid>https://samma.io/categories/cloud/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

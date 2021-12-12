@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Samma.io</title>
+    <link>https://samma.io/tags/</link>
+    <description>Recent content in Tags on Samma.io</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 30 Nov 2021 09:00:00 +0000</lastBuildDate><atom:link href="https://samma.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Developer</title>
+      <link>https://samma.io/tags/developer/</link>
+      <pubDate>Tue, 30 Nov 2021 09:00:00 +0000</pubDate>
+      
+      <guid>https://samma.io/tags/developer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>DevSecOps</title>
+      <link>https://samma.io/tags/devsecops/</link>
+      <pubDate>Tue, 30 Nov 2021 09:00:00 +0000</pubDate>
+      
+      <guid>https://samma.io/tags/devsecops/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Docker</title>
+      <link>https://samma.io/tags/docker/</link>
+      <pubDate>Tue, 30 Nov 2021 09:00:00 +0000</pubDate>
+      
+      <guid>https://samma.io/tags/docker/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>LocalDev</title>
+      <link>https://samma.io/tags/localdev/</link>
+      <pubDate>Tue, 30 Nov 2021 09:00:00 +0000</pubDate>
+      
+      <guid>https://samma.io/tags/localdev/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Scanner</title>
+      <link>https://samma.io/tags/scanner/</link>
+      <pubDate>Tue, 30 Nov 2021 09:00:00 +0000</pubDate>
+      
+      <guid>https://samma.io/tags/scanner/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pentester</title>
+      <link>https://samma.io/tags/pentester/</link>
+      <pubDate>Tue, 21 Sep 2021 09:00:00 +0000</pubDate>
+      
+      <guid>https://samma.io/tags/pentester/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Gitlab</title>
+      <link>https://samma.io/tags/gitlab/</link>
+      <pubDate>Sun, 11 Jul 2021 09:00:00 +0000</pubDate>
+      
+      <guid>https://samma.io/tags/gitlab/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>AWS</title>
+      <link>https://samma.io/tags/aws/</link>
+      <pubDate>Wed, 02 Jun 2021 09:00:00 +0000</pubDate>
+      
+      <guid>https://samma.io/tags/aws/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

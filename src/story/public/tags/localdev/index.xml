@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>LocalDev on Samma.io</title>
+    <link>https://samma.io/tags/localdev/</link>
+    <description>Recent content in LocalDev on Samma.io</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 30 Nov 2021 09:00:00 +0000</lastBuildDate><atom:link href="https://samma.io/tags/localdev/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Scan your app</title>
+      <link>https://samma.io/posts/2021-11-30-devs-scan-your-app/</link>
+      <pubDate>Tue, 30 Nov 2021 09:00:00 +0000</pubDate>
+      
+      <guid>https://samma.io/posts/2021-11-30-devs-scan-your-app/</guid>
+      <description>Scan your app before first commit ! #devsecops </description>
+    </item>
+    
+  </channel>
+</rss>
