@@ -152,38 +152,6 @@ scanners: [&lsquo;nmap&rsquo;]
 It also comes with predefined dashboards for both Grafana och Kibana
 It&rsquo;s super easy to install using samma helm chart
 <a href="https://github.com/samma-io/highground">https://github.com/samma-io/highground</a></p>
-<h1 id="install-1">Install</h1>
-<p>Samma commes with prebuild docker images. then can be run standaonly with a simple docker run command ore deployed into a Kubernetes cluster and run as jobs ore cronjobs</p>
-<h3 id="docker-1">Docker</h3>
-<p>Scan your first target with</p>
-<pre tabindex="0"><code>docker run sammascanner/nikto -e TARGET=samma.io 
-</code></pre><p>Find all our scanners at our github pages</p>
-<p><a href="https://github.com/samma-io/">https://github.com/samma-io/</a></p>
-<h3 id="helm-1">Helm</h3>
-<p>You can easu deploy you scanners with helm commands to start the scanes</p>
-<pre tabindex="0"><code>helm upgrade --install samma-io --set target=samma.io nmap-samma nmap/ 
-</code></pre><p>You can find all the helmcharts at our helm githib repo</p>
-<p><a href="https://github.com/samma-io/helm">https://github.com/samma-io/helm</a></p>
-<h3 id="kubernetes-custom-resurce">Kubernetes Custom Resurce</h3>
-<p>Samma also comes with a custom resurce for kubernetes. With this you can easy deploy diffrent targets from you kubernetes cluster</p>
-<pre tabindex="0"><code>apiVersion: samma.io/v1  
-kind: Scanner
-metadata: 
-  name: samma-nmap     
-  namespace: samma-io
-spec: 
- target: www.samma.io
- scheduler: &quot;2 19 * * *&quot;
- samma_io_id: &quot;12345&quot;
- samma_io_tags: 
-      - scanner
-      - prod
- #samme_io_json: '{&quot;attacke&quot;:&quot;true&quot;}'
- write_to_file: &quot;true&quot;
- elasticsearch: elasticsearch
- scanners: ['nmap']
-</code></pre><p>Read more at our kubernetes operator
-<a href="https://github.com/samma-io/operator">https://github.com/samma-io/operator</a></p>
 
   
   </div>

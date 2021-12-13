@@ -3,7 +3,57 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://samma.io/categories/</loc>
-    <lastmod>2021-11-30T09:00:00+00:00</lastmod>
+    <lastmod>2021-12-06T09:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://samma.io/tags/devsecops/</loc>
+    <lastmod>2021-12-06T09:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://samma.io/</loc>
+    <lastmod>2021-12-06T09:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://samma.io/tags/mattias/</loc>
+    <lastmod>2021-12-06T09:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://samma.io/posts/</loc>
+    <lastmod>2021-12-06T09:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://samma.io/tags/samma/</loc>
+    <lastmod>2021-12-06T09:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://samma.io/categories/samma/</loc>
+    <lastmod>2021-12-06T09:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://samma.io/tags/scanner/</loc>
+    <lastmod>2021-12-06T09:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://samma.io/categories/story/</loc>
+    <lastmod>2021-12-06T09:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://samma.io/tags/</loc>
+    <lastmod>2021-12-06T09:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://samma.io/posts/2021-12-06-why-i-built-samma/</loc>
+    <lastmod>2021-12-06T09:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -12,17 +62,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://samma.io/tags/devsecops/</loc>
-    <lastmod>2021-11-30T09:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://samma.io/tags/docker/</loc>
-    <lastmod>2021-11-30T09:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://samma.io/</loc>
     <lastmod>2021-11-30T09:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -37,27 +77,12 @@
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://samma.io/posts/</loc>
-    <lastmod>2021-11-30T09:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://samma.io/posts/2021-11-30-devs-scan-your-app/</loc>
     <lastmod>2021-11-30T09:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://samma.io/tags/scanner/</loc>
-    <lastmod>2021-11-30T09:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://samma.io/categories/scanners/</loc>
-    <lastmod>2021-11-30T09:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://samma.io/tags/</loc>
     <lastmod>2021-11-30T09:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>

@@ -6,7 +6,18 @@
     <description>Recent content in DevSecOps on Samma.io</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 30 Nov 2021 09:00:00 +0000</lastBuildDate><atom:link href="https://samma.io/tags/devsecops/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 06 Dec 2021 09:00:00 +0000</lastBuildDate><atom:link href="https://samma.io/tags/devsecops/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Why i built Samma</title>
+      <link>https://samma.io/posts/2021-12-06-why-i-built-samma/</link>
+      <pubDate>Mon, 06 Dec 2021 09:00:00 +0000</pubDate>
+      
+      <guid>https://samma.io/posts/2021-12-06-why-i-built-samma/</guid>
+      <description>First page Why I started samma scanner. The scanners I worked with were far away from the developer. They were run on some external server and you could &amp;ldquo;Schedule a scan&amp;rdquo; that was started when there was space on the scanner server.
+I did see a problem with this a wanted scanners to be
+Light I wanted the scanner to be light runs fast and can be run anywhere from a scanner engine but also from a developer laptop.</description>
+    </item>
+    
     <item>
       <title>Scan your app</title>
       <link>https://samma.io/posts/2021-11-30-devs-scan-your-app/</link>

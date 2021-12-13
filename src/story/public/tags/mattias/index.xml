@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>mattias on Samma.io</title>
+    <link>https://samma.io/tags/mattias/</link>
+    <description>Recent content in mattias on Samma.io</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 06 Dec 2021 09:00:00 +0000</lastBuildDate><atom:link href="https://samma.io/tags/mattias/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Why i built Samma</title>
+      <link>https://samma.io/posts/2021-12-06-why-i-built-samma/</link>
+      <pubDate>Mon, 06 Dec 2021 09:00:00 +0000</pubDate>
+      
+      <guid>https://samma.io/posts/2021-12-06-why-i-built-samma/</guid>
+      <description>First page Why I started samma scanner. The scanners I worked with were far away from the developer. They were run on some external server and you could &amp;ldquo;Schedule a scan&amp;rdquo; that was started when there was space on the scanner server.
+I did see a problem with this a wanted scanners to be
+Light I wanted the scanner to be light runs fast and can be run anywhere from a scanner engine but also from a developer laptop.</description>
+    </item>
+    
+  </channel>
+</rss>
