@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <link rel="preload" href="/lib/font-awesome/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/lib/font-awesome/webfonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/lib/font-awesome/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/lib/JetBrainsMono/web/woff2/JetBrainsMono-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <script type="text/javascript" src="https://latest.cactus.chat/cactus.js"></script>
+  <link rel="stylesheet" href="https://latest.cactus.chat/style.css" type="text/css">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title> How a Scanner is working | Samma.io</title>
+  <link rel = 'canonical' href = 'https://samma.io/posts/2021-12-13-how-a-scanner-is-working/'>
+  <meta name="description" content="Samma is a set och opensource scanners set toghter to keep you system secure.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta property="og:title" content="How a Scanner is working" />
+<meta property="og:description" content="How a scanner is working This will explain how a samma scanner is working.
+Start the scanner The first part of the scanner is a wrapper that starts the scan. These are on some scanner a python scripts that read the ENV values in the docker. And then wraps the scanner commands after these settings.
+this is one of the commands that start the Nmap scanner
+process = subprocess.Popen(&#39;sudo /bin/nmap -sV --script http-enum {0} -oX /out/result." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://samma.io/posts/2021-12-13-how-a-scanner-is-working/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-12-13T09:00:00+00:00" />
+<meta property="article:modified_time" content="2021-12-13T09:00:00+00:00" />
+
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="How a Scanner is working"/>
+<meta name="twitter:description" content="How a scanner is working This will explain how a samma scanner is working.
+Start the scanner The first part of the scanner is a wrapper that starts the scan. These are on some scanner a python scripts that read the ENV values in the docker. And then wraps the scanner commands after these settings.
+this is one of the commands that start the Nmap scanner
+process = subprocess.Popen(&#39;sudo /bin/nmap -sV --script http-enum {0} -oX /out/result."/>
+
+  
+  
+    
+  
+  
+  <link rel="stylesheet" href="https://samma.io/css/styles.56a104c35e8692dad52597e01c30f782c8612bf9ce3b1d4572c71eff0049b8edd71457436be28a9a537080647849a63f529ea68b0316bb562b9fdd9641492b3c.css" integrity="sha512-VqEEw16GktrVJZfgHDD3gshhK/nOOx1Fcsce/wBJuO3XFFdDa&#43;KKmlNwgGR4SaY/Up6miwMWu1Yrn92WQUkrPA=="> 
+
+  
+  
+  
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+
+  
+<link rel="icon" type="image/png" href="https://samma.io/images/favicon.ico" />
+
+  
+  
+</head>
+
+<body class="max-width mx-auto px3 ltr">
+  <div class="content index py4">
+
+  <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;" aria-label="Top of Page"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/scanners">Scanners</a></li>
+         
+        <li><a href="/posts">Posts</a></li>
+         
+        <li><a href="/support">Support</a></li>
+         
+        <li><a href="/about">About</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li>
+          <a class="icon" href=" https://samma.io/about/" aria-label="Previous">
+            <i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i>
+          </a>
+        </li>
+        
+        
+        <li>
+          <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" aria-label="Top of Page">
+            <i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i>
+          </a>
+        </li>
+        <li>
+          <a class="icon" href="#" aria-label="Share">
+            <i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i>
+          </a>
+        </li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fsamma.io%2fposts%2f2021-12-13-how-a-scanner-is-working%2f" aria-label="Facebook">
+      <i class="fab fa-facebook " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fsamma.io%2fposts%2f2021-12-13-how-a-scanner-is-working%2f&text=How%20a%20Scanner%20is%20working" aria-label="Twitter">
+      <i class="fab fa-twitter " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fsamma.io%2fposts%2f2021-12-13-how-a-scanner-is-working%2f&title=How%20a%20Scanner%20is%20working" aria-label="Linkedin">
+      <i class="fab fa-linkedin " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fsamma.io%2fposts%2f2021-12-13-how-a-scanner-is-working%2f&is_video=false&description=How%20a%20Scanner%20is%20working" aria-label="Pinterest">
+      <i class="fab fa-pinterest " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=How%20a%20Scanner%20is%20working&body=Check out this article: https%3a%2f%2fsamma.io%2fposts%2f2021-12-13-how-a-scanner-is-working%2f" aria-label="Email">
+      <i class="fas fa-envelope " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fsamma.io%2fposts%2f2021-12-13-how-a-scanner-is-working%2f&title=How%20a%20Scanner%20is%20working" aria-label="Pocket">
+      <i class="fab fa-get-pocket " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fsamma.io%2fposts%2f2021-12-13-how-a-scanner-is-working%2f&title=How%20a%20Scanner%20is%20working" aria-label="reddit">
+      <i class="fab fa-reddit " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fsamma.io%2fposts%2f2021-12-13-how-a-scanner-is-working%2f&name=How%20a%20Scanner%20is%20working&description=How%20a%20scanner%20is%20working%20This%20will%20explain%20how%20a%20samma%20scanner%20is%20working.%0aStart%20the%20scanner%20The%20first%20part%20of%20the%20scanner%20is%20a%20wrapper%20that%20starts%20the%20scan.%20These%20are%20on%20some%20scanner%20a%20python%20scripts%20that%20read%20the%20ENV%20values%20in%20the%20docker.%20And%20then%20wraps%20the%20scanner%20commands%20after%20these%20settings.%0athis%20is%20one%20of%20the%20commands%20that%20start%20the%20Nmap%20scanner%0aprocess%20%3d%20subprocess.Popen%28%27sudo%20%2fbin%2fnmap%20-sV%20--script%20http-enum%20%7b0%7d%20-oX%20%2fout%2fresult." aria-label="Tumblr">
+      <i class="fab fa-tumblr " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fsamma.io%2fposts%2f2021-12-13-how-a-scanner-is-working%2f&t=How%20a%20Scanner%20is%20working" aria-label="Hacker News">
+      <i class="fab fa-hacker-news " aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+    
+    <div id="toc">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#start-the-scanner">Start the scanner</a></li>
+    <li><a href="#parse-the-result">Parse the result</a></li>
+  </ul>
+</nav>
+    </div>
+    
+  </span>
+</div>
+
+
+  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <header>
+      <h1 class="posttitle" itemprop="name headline">
+        How a Scanner is working
+      </h1>
+      <div class="meta">
+        
+        <div class="postdate">
+          
+          <time datetime="2021-12-13 09:00:00 &#43;0000 UTC" itemprop="datePublished">2021-12-13</time>
+          
+        </div>
+        
+        
+        
+        <div class="article-category">
+            <i class="fas fa-archive"></i>
+            
+            
+            <a class="category-link" href="/categories/samma">samma</a>
+            
+        </div>
+        
+        
+        <div class="article-tag">
+            <i class="fas fa-tag"></i>
+            
+            
+            <a class="tag-link" href="/tags/samma" rel="tag">samma</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/mattias" rel="tag">mattias</a>
+            
+        </div>
+        
+      </div>
+    </header>
+
+  
+    
+    <div class="content" itemprop="articleBody">
+      <h1 id="how-a-scanner-is-working">How a scanner is working</h1>
+<p>This will explain how a samma scanner is working.</p>
+<h2 id="start-the-scanner">Start the scanner</h2>
+<p>The first part of the scanner is a wrapper that starts the scan. These are on some scanner a python scripts that read the ENV values in the docker. And then wraps the scanner commands after these settings.</p>
+<p>this is one of the commands that start the Nmap scanner</p>
+<pre tabindex="0"><code>process = subprocess.Popen('sudo /bin/nmap -sV --script http-enum  {0} -oX /out/result.xml '.format(os.environ['TARGET']) , shell=True, stdout=subprocess.PIPE)
+
+</code></pre><h2 id="parse-the-result">Parse the result</h2>
+<p>The next step is to parse the result from the scanner. In the command from above, you see a file called result.xml.
+In that file, Nmap stores all the findings. But so that our time databases can use the result samma has file parser for Nmap results.</p>
+<p>The XML file is parsed and then produces a JSON record with every finding.
+These results are printed out using stout in the docker container.</p>
+
+    </div>
+  </article>
+
+  
+  
+
+
+
+
+
+
+  <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/scanners">Scanners</a></li>
+         
+          <li><a href="/posts">Posts</a></li>
+         
+          <li><a href="/support">Support</a></li>
+         
+          <li><a href="/about">About</a></li>
+        
+      </ul>
+    </div>
+
+    
+    <div id="toc-footer" style="display: none">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#start-the-scanner">Start the scanner</a></li>
+    <li><a href="#parse-the-result">Parse the result</a></li>
+  </ul>
+</nav>
+    </div>
+    
+
+    <div id="share-footer" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fsamma.io%2fposts%2f2021-12-13-how-a-scanner-is-working%2f" aria-label="Facebook">
+      <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fsamma.io%2fposts%2f2021-12-13-how-a-scanner-is-working%2f&text=How%20a%20Scanner%20is%20working" aria-label="Twitter">
+      <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fsamma.io%2fposts%2f2021-12-13-how-a-scanner-is-working%2f&title=How%20a%20Scanner%20is%20working" aria-label="Linkedin">
+      <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fsamma.io%2fposts%2f2021-12-13-how-a-scanner-is-working%2f&is_video=false&description=How%20a%20Scanner%20is%20working" aria-label="Pinterest">
+      <i class="fab fa-pinterest fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=How%20a%20Scanner%20is%20working&body=Check out this article: https%3a%2f%2fsamma.io%2fposts%2f2021-12-13-how-a-scanner-is-working%2f" aria-label="Email">
+      <i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fsamma.io%2fposts%2f2021-12-13-how-a-scanner-is-working%2f&title=How%20a%20Scanner%20is%20working" aria-label="Pocket">
+      <i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fsamma.io%2fposts%2f2021-12-13-how-a-scanner-is-working%2f&title=How%20a%20Scanner%20is%20working" aria-label="reddit">
+      <i class="fab fa-reddit fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fsamma.io%2fposts%2f2021-12-13-how-a-scanner-is-working%2f&name=How%20a%20Scanner%20is%20working&description=How%20a%20scanner%20is%20working%20This%20will%20explain%20how%20a%20samma%20scanner%20is%20working.%0aStart%20the%20scanner%20The%20first%20part%20of%20the%20scanner%20is%20a%20wrapper%20that%20starts%20the%20scan.%20These%20are%20on%20some%20scanner%20a%20python%20scripts%20that%20read%20the%20ENV%20values%20in%20the%20docker.%20And%20then%20wraps%20the%20scanner%20commands%20after%20these%20settings.%0athis%20is%20one%20of%20the%20commands%20that%20start%20the%20Nmap%20scanner%0aprocess%20%3d%20subprocess.Popen%28%27sudo%20%2fbin%2fnmap%20-sV%20--script%20http-enum%20%7b0%7d%20-oX%20%2fout%2fresult." aria-label="Tumblr">
+      <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fsamma.io%2fposts%2f2021-12-13-how-a-scanner-is-working%2f&t=How%20a%20Scanner%20is%20working" aria-label="Hacker News">
+      <i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+      
+        <a id="menu-toggle" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;" aria-label="Menu">
+          <i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        
+        <a id="toc-toggle" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;" aria-label="TOC">
+          <i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        
+        <a id="share-toggle" class="icon" href="#" onclick="$('#share-footer').toggle();return false;" aria-label="Share">
+          <i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" aria-label="Top of Page">
+          <i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+
+  <footer id="footer">
+  <div class="footer-left">
+    Copyright  &copy; 2021  Samma.io 
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/scanners">Scanners</a></li>
+         
+        <li><a href="/posts">Posts</a></li>
+         
+        <li><a href="/support">Support</a></li>
+         
+        <li><a href="/about">About</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+
+  </div>
+</body>
+
+<link rel="stylesheet" href=/lib/font-awesome/css/all.min.css>
+<script src=/lib/jquery/jquery.min.js></script>
+<script src=/js/main.js></script>
+
+<script src=/js/code-copy.js></script>
+
+
+
+
+</html>

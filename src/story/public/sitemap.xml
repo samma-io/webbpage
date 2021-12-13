@@ -42,6 +42,11 @@
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>https://samma.io/about/</loc>
+    <lastmod>2021-12-12T17:51:42+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>https://samma.io/tags/devsecops/</loc>
     <lastmod>2021-12-06T09:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -122,7 +127,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://samma.io/posts/2021-07-11-find-secrity-problesm-early/</loc>
+    <loc>https://samma.io/posts/2021-07-11-find-secrity-problems-early/</loc>
     <lastmod>2021-07-11T09:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -154,11 +159,6 @@
   </url><url>
     <loc>https://samma.io/posts/2011-06-02-keep-your-aws-secure/</loc>
     <lastmod>2021-06-02T09:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://samma.io/about/</loc>
-    <lastmod>2016-08-24T17:51:42+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>

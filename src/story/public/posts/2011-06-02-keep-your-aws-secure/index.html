@@ -16,10 +16,9 @@
   <meta name="robots" content="all,follow">
   <meta name="googlebot" content="index,follow,snippet,archive">
   <meta property="og:title" content="Keep Your AWS service secure" />
-<meta property="og:description" content="Before 1.7.0_06, String has 4 non static field:
- char[] value int[] offset int count int hash  Subing.substring create a String by sharing the original String&rsquo;s internal char[] value and setting offset. This saves memory and makes String.substring run in a constant time($O(1)$). Meanwhile, this feature may cause memory leak1.
-http://hg.openjdk.java.net/jdk6/jdk6/jdk/file/8deef18bb749/src/share/classes/java/lang/String.java
-public final class String implements java.io.Serializable, Comparable&lt;String&gt;, CharSequence { /** The value is used for character storage. */ private final char value[]; /** The offset is the first index of the storage that is used." />
+<meta property="og:description" content="Keep your aws targets synced In AWS sometimes you get alot of ec2 and public ip fast. And you may want to keep them scanned and up to sync So then its some easy task you can do. You will also see a list of ip in grafana and kibana
+Find your public ip In your aws cli run this command to get your public ip
+aws ec2 describe-instances | grep PublicIpAddress | grep -o -P &quot;\d&#43;\." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://samma.io/posts/2011-06-02-keep-your-aws-secure/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2021-06-02T09:00:00+00:00" />
@@ -28,10 +27,9 @@ public final class String implements java.io.Serializable, Comparable&lt;String&
 
   <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Keep Your AWS service secure"/>
-<meta name="twitter:description" content="Before 1.7.0_06, String has 4 non static field:
- char[] value int[] offset int count int hash  Subing.substring create a String by sharing the original String&rsquo;s internal char[] value and setting offset. This saves memory and makes String.substring run in a constant time($O(1)$). Meanwhile, this feature may cause memory leak1.
-http://hg.openjdk.java.net/jdk6/jdk6/jdk/file/8deef18bb749/src/share/classes/java/lang/String.java
-public final class String implements java.io.Serializable, Comparable&lt;String&gt;, CharSequence { /** The value is used for character storage. */ private final char value[]; /** The offset is the first index of the storage that is used."/>
+<meta name="twitter:description" content="Keep your aws targets synced In AWS sometimes you get alot of ec2 and public ip fast. And you may want to keep them scanned and up to sync So then its some easy task you can do. You will also see a list of ip in grafana and kibana
+Find your public ip In your aws cli run this command to get your public ip
+aws ec2 describe-instances | grep PublicIpAddress | grep -o -P &quot;\d&#43;\."/>
 
   
   
@@ -84,14 +82,14 @@ public final class String implements java.io.Serializable, Comparable&lt;String&
       <ul>
         
         <li>
-          <a class="icon" href=" https://samma.io/about/" aria-label="Previous">
+          <a class="icon" href=" https://samma.io/scanners/" aria-label="Previous">
             <i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i>
           </a>
         </li>
         
         
         <li>
-          <a class="icon" href="https://samma.io/posts/2021-07-11-find-secrity-problesm-early/" aria-label="Next">
+          <a class="icon" href="https://samma.io/posts/2021-07-11-find-secrity-problems-early/" aria-label="Next">
             <i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i>
           </a>
         </li>
@@ -157,7 +155,7 @@ public final class String implements java.io.Serializable, Comparable&lt;String&
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fsamma.io%2fposts%2f2011-06-02-keep-your-aws-secure%2f&name=Keep%20Your%20AWS%20service%20secure&description=Before%201.7.0_06%2c%20String%20has%204%20non%20static%20field%3a%0a%20char%5b%5d%20value%20int%5b%5d%20offset%20int%20count%20int%20hash%20%20Subing.substring%20create%20a%20String%20by%20sharing%20the%20original%20String%26rsquo%3bs%20internal%20char%5b%5d%20value%20and%20setting%20offset.%20This%20saves%20memory%20and%20makes%20String.substring%20run%20in%20a%20constant%20time%28%24O%281%29%24%29.%20Meanwhile%2c%20this%20feature%20may%20cause%20memory%20leak1.%0ahttp%3a%2f%2fhg.openjdk.java.net%2fjdk6%2fjdk6%2fjdk%2ffile%2f8deef18bb749%2fsrc%2fshare%2fclasses%2fjava%2flang%2fString.java%0apublic%20final%20class%20String%20implements%20java.io.Serializable%2c%20Comparable%26lt%3bString%26gt%3b%2c%20CharSequence%20%7b%20%2f%2a%2a%20The%20value%20is%20used%20for%20character%20storage.%20%2a%2f%20private%20final%20char%20value%5b%5d%3b%20%2f%2a%2a%20The%20offset%20is%20the%20first%20index%20of%20the%20storage%20that%20is%20used." aria-label="Tumblr">
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fsamma.io%2fposts%2f2011-06-02-keep-your-aws-secure%2f&name=Keep%20Your%20AWS%20service%20secure&description=Keep%20your%20aws%20targets%20synced%20In%20AWS%20sometimes%20you%20get%20alot%20of%20ec2%20and%20public%20ip%20fast.%20And%20you%20may%20want%20to%20keep%20them%20scanned%20and%20up%20to%20sync%20So%20then%20its%20some%20easy%20task%20you%20can%20do.%20You%20will%20also%20see%20a%20list%20of%20ip%20in%20grafana%20and%20kibana%0aFind%20your%20public%20ip%20In%20your%20aws%20cli%20run%20this%20command%20to%20get%20your%20public%20ip%0aaws%20ec2%20describe-instances%20%7c%20grep%20PublicIpAddress%20%7c%20grep%20-o%20-P%20%26quot%3b%5cd%2b%5c." aria-label="Tumblr">
       <i class="fab fa-tumblr " aria-hidden="true"></i>
     </a>
   </li>
@@ -171,7 +169,16 @@ public final class String implements java.io.Serializable, Comparable&lt;String&
     </div>
     
     <div id="toc">
-      <nav id="TableOfContents"></nav>
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#keep-your-aws-targets-synced">Keep your aws targets synced</a>
+      <ul>
+        <li><a href="#find-your-public-ip">Find your public ip</a></li>
+        <li><a href="#add-scanner-to-thoose-is-now-simple">Add scanner to thoose is now simple</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
     </div>
     
   </span>
@@ -228,184 +235,35 @@ public final class String implements java.io.Serializable, Comparable&lt;String&
   
     
     <div class="content" itemprop="articleBody">
-      <p>Before 1.7.0_06, <code>String</code> has 4 non static field:</p>
-<ul>
-<li>char[] value</li>
-<li>int[] offset</li>
-<li>int count</li>
-<li>int hash</li>
-</ul>
-<p><code>Subing.substring</code> create a String by sharing the original String&rsquo;s internal <code>char[] value</code> and setting offset. This saves memory and makes <code>String.substring</code> run in a constant time($O(1)$).
-Meanwhile, this feature may cause <strong>memory leak</strong><sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>.</p>
-<p><a href="http://hg.openjdk.java.net/jdk6/jdk6/jdk/file/8deef18bb749/src/share/classes/java/lang/String.java">http://hg.openjdk.java.net/jdk6/jdk6/jdk/file/8deef18bb749/src/share/classes/java/lang/String.java</a></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Java" data-lang="Java"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">final</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">String</span>
-    <span style="color:#66d9ef">implements</span> java<span style="color:#f92672">.</span><span style="color:#a6e22e">io</span><span style="color:#f92672">.</span><span style="color:#a6e22e">Serializable</span><span style="color:#f92672">,</span> Comparable<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;,</span> CharSequence
-<span style="color:#f92672">{</span>
-    <span style="color:#75715e">/** The value is used for character storage. */</span>
-    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">final</span> <span style="color:#66d9ef">char</span> value<span style="color:#f92672">[];</span>
+      <h2 id="keep-your-aws-targets-synced">Keep your aws targets synced</h2>
+<p>In AWS sometimes you get alot of ec2 and public ip fast. And you may want to keep them scanned and up to sync
+So then its some easy task you can do.
+You will also see a list of ip in grafana and kibana</p>
+<h3 id="find-your-public-ip">Find your public ip</h3>
+<p>In your aws cli run this command to get your public ip</p>
+<pre tabindex="0"><code>aws ec2 describe-instances | grep PublicIpAddress | grep -o -P &quot;\d+\.\d+\.\d+\.\d+&quot; | grep -v '^10\.'
+</code></pre><h3 id="add-scanner-to-thoose-is-now-simple">Add scanner to thoose is now simple</h3>
+<p>First get the ip and save to file</p>
+<pre tabindex="0"><code>aws ec2 describe-instances | grep PublicIpAddress | grep -o -P &quot;\d+\.\d+\.\d+\.\d+&quot; | grep -v '^10\.' &gt;&gt; ip.txt
+</code></pre><p>Now run the bash script to create scanners with helm</p>
+<pre tabindex="0"><code>input=&quot;ip.txt&quot;
+while IFS= read -r line
+do
+  TARGET=$line
+  NAME=$line
+  HOURE=$(shuf -i 7-10 -n 1)
+  MINUTE=$(shuf -i 0-60 -n 1)
 
-    <span style="color:#75715e">/** The offset is the first index of the storage that is used. */</span>
-    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">final</span> <span style="color:#66d9ef">int</span> offset<span style="color:#f92672">;</span>
+  helm uninstall tsunamo-ip-$NAME -n samma-io
+  helm upgrade --install tsunamo-ip-$NAME  --debug --set ip=$TARGET  /home/mahe/helm-repo/tsunami -n samma-io
+  helm uninstall $NAME -n samma-io
+  helm upgrade --install $NAME  --debug --set target=$TARGET --set schedule=&quot;$MINUTE $HOURE * * 5&quot; --set image.tag=v0.2 /home/mahe/helm-repo/nmap -n samma-io
+  helm uninstall nikto-$NAME -n samma-io 
+  helm upgrade --install nikto-$NAME  --debug --set target=$TARGET --set schedule=&quot;$MINUTE $HOURE * * 5&quot; /home/mahe/helm-repo/nikto  -n samma-io
+done &lt; &quot;$input&quot;
 
-    <span style="color:#75715e">/** The count is the number of characters in the String. */</span>
-    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">final</span> <span style="color:#66d9ef">int</span> count<span style="color:#f92672">;</span>
-
-    <span style="color:#75715e">/** Cache the hash code for the string */</span>
-    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">int</span> hash<span style="color:#f92672">;</span> <span style="color:#75715e">// Default to 0
-</span><span style="color:#75715e"></span>
-    <span style="color:#75715e">// ...
-</span><span style="color:#75715e"></span>
-    <span style="color:#75715e">// Package private constructor which shares value array for speed.
-</span><span style="color:#75715e"></span>    String<span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> offset<span style="color:#f92672">,</span> <span style="color:#66d9ef">int</span> count<span style="color:#f92672">,</span> <span style="color:#66d9ef">char</span> value<span style="color:#f92672">[])</span> <span style="color:#f92672">{</span>
-        <span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">value</span> <span style="color:#f92672">=</span> value<span style="color:#f92672">;</span>
-        <span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">offset</span> <span style="color:#f92672">=</span> offset<span style="color:#f92672">;</span>
-        <span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">count</span> <span style="color:#f92672">=</span> count<span style="color:#f92672">;</span>
-    <span style="color:#f92672">}</span>
-
-    <span style="color:#75715e">// ...
-</span><span style="color:#75715e"></span>
-    <span style="color:#75715e">/**
-</span><span style="color:#75715e">     * Returns a new string that is a substring of this string. The
-</span><span style="color:#75715e">     * substring begins at the specified &lt;code&gt;beginIndex&lt;/code&gt; and
-</span><span style="color:#75715e">     * extends to the character at index &lt;code&gt;endIndex - 1&lt;/code&gt;.
-</span><span style="color:#75715e">     * Thus the length of the substring is &lt;code&gt;endIndex-beginIndex&lt;/code&gt;.
-</span><span style="color:#75715e">     * &lt;p&gt;
-</span><span style="color:#75715e">     * Examples:
-</span><span style="color:#75715e">     * &lt;blockquote&gt;&lt;pre&gt;
-</span><span style="color:#75715e">     * &#34;hamburger&#34;.substring(4, 8) returns &#34;urge&#34;
-</span><span style="color:#75715e">     * &#34;smiles&#34;.substring(1, 5) returns &#34;mile&#34;
-</span><span style="color:#75715e">     * &lt;/pre&gt;&lt;/blockquote&gt;
-</span><span style="color:#75715e">     *
-</span><span style="color:#75715e">     * @param      beginIndex   the beginning index, inclusive.
-</span><span style="color:#75715e">     * @param      endIndex     the ending index, exclusive.
-</span><span style="color:#75715e">     * @return     the specified substring.
-</span><span style="color:#75715e">     * @exception  IndexOutOfBoundsException  if the
-</span><span style="color:#75715e">     *             &lt;code&gt;beginIndex&lt;/code&gt; is negative, or
-</span><span style="color:#75715e">     *             &lt;code&gt;endIndex&lt;/code&gt; is larger than the length of
-</span><span style="color:#75715e">     *             this &lt;code&gt;String&lt;/code&gt; object, or
-</span><span style="color:#75715e">     *             &lt;code&gt;beginIndex&lt;/code&gt; is larger than
-</span><span style="color:#75715e">     *             &lt;code&gt;endIndex&lt;/code&gt;.
-</span><span style="color:#75715e">     */</span>
-    <span style="color:#66d9ef">public</span> String <span style="color:#a6e22e">substring</span><span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> beginIndex<span style="color:#f92672">,</span> <span style="color:#66d9ef">int</span> endIndex<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-        <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>beginIndex <span style="color:#f92672">&lt;</span> 0<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-            <span style="color:#66d9ef">throw</span> <span style="color:#66d9ef">new</span> StringIndexOutOfBoundsException<span style="color:#f92672">(</span>beginIndex<span style="color:#f92672">);</span>
-        <span style="color:#f92672">}</span>
-        <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>endIndex <span style="color:#f92672">&gt;</span> count<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-            <span style="color:#66d9ef">throw</span> <span style="color:#66d9ef">new</span> StringIndexOutOfBoundsException<span style="color:#f92672">(</span>endIndex<span style="color:#f92672">);</span>
-        <span style="color:#f92672">}</span>
-        <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>beginIndex <span style="color:#f92672">&gt;</span> endIndex<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-            <span style="color:#66d9ef">throw</span> <span style="color:#66d9ef">new</span> StringIndexOutOfBoundsException<span style="color:#f92672">(</span>endIndex <span style="color:#f92672">-</span> beginIndex<span style="color:#f92672">);</span>
-        <span style="color:#f92672">}</span>
-        <span style="color:#66d9ef">return</span> <span style="color:#f92672">((</span>beginIndex <span style="color:#f92672">==</span> 0<span style="color:#f92672">)</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#f92672">(</span>endIndex <span style="color:#f92672">==</span> count<span style="color:#f92672">))</span> <span style="color:#f92672">?</span> <span style="color:#66d9ef">this</span> <span style="color:#f92672">:</span>
-            <span style="color:#66d9ef">new</span> String<span style="color:#f92672">(</span>offset <span style="color:#f92672">+</span> beginIndex<span style="color:#f92672">,</span> endIndex <span style="color:#f92672">-</span> beginIndex<span style="color:#f92672">,</span> value<span style="color:#f92672">);</span>
-    <span style="color:#f92672">}</span>
-
-    <span style="color:#75715e">// ...
-</span><span style="color:#75715e"></span><span style="color:#f92672">}</span>
-</code></pre></div><p>Since Java 1.7.0_06, <code>offset</code> and <code>count</code> fields were removed. <code>String.substring</code> makes new copies of <code>value</code>, which means we can forget about the memory leak but the runtime becomes $O(N)$ at the same time.</p>
-<p><a href="http://hg.openjdk.java.net/jdk8/jdk8/jdk/file/687fd7c7986d/src/share/classes/java/lang/String.java">http://hg.openjdk.java.net/jdk8/jdk8/jdk/file/687fd7c7986d/src/share/classes/java/lang/String.java</a></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Java" data-lang="Java">
-<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">final</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">String</span>
-    <span style="color:#66d9ef">implements</span> java<span style="color:#f92672">.</span><span style="color:#a6e22e">io</span><span style="color:#f92672">.</span><span style="color:#a6e22e">Serializable</span><span style="color:#f92672">,</span> Comparable<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;,</span> CharSequence <span style="color:#f92672">{</span>
-    <span style="color:#75715e">/** The value is used for character storage. */</span>
-    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">final</span> <span style="color:#66d9ef">char</span> value<span style="color:#f92672">[];</span>
-
-    <span style="color:#75715e">/** Cache the hash code for the string */</span>
-    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">int</span> hash<span style="color:#f92672">;</span> <span style="color:#75715e">// Default to 0
-</span><span style="color:#75715e"></span>
-    <span style="color:#75715e">// ...
-</span><span style="color:#75715e"></span>
-  <span style="color:#75715e">/**
-</span><span style="color:#75715e">     * Allocates a new {@code String} that contains characters from a subarray
-</span><span style="color:#75715e">     * of the character array argument. The {@code offset} argument is the
-</span><span style="color:#75715e">     * index of the first character of the subarray and the {@code count}
-</span><span style="color:#75715e">     * argument specifies the length of the subarray. The contents of the
-</span><span style="color:#75715e">     * subarray are copied; subsequent modification of the character array does
-</span><span style="color:#75715e">     * not affect the newly created string.
-</span><span style="color:#75715e">     *
-</span><span style="color:#75715e">     * @param  value
-</span><span style="color:#75715e">     *         Array that is the source of characters
-</span><span style="color:#75715e">     *
-</span><span style="color:#75715e">     * @param  offset
-</span><span style="color:#75715e">     *         The initial offset
-</span><span style="color:#75715e">     *
-</span><span style="color:#75715e">     * @param  count
-</span><span style="color:#75715e">     *         The length
-</span><span style="color:#75715e">     *
-</span><span style="color:#75715e">     * @throws  IndexOutOfBoundsException
-</span><span style="color:#75715e">     *          If the {@code offset} and {@code count} arguments index
-</span><span style="color:#75715e">     *          characters outside the bounds of the {@code value} array
-</span><span style="color:#75715e">     */</span>
-    <span style="color:#66d9ef">public</span> <span style="color:#a6e22e">String</span><span style="color:#f92672">(</span><span style="color:#66d9ef">char</span> value<span style="color:#f92672">[],</span> <span style="color:#66d9ef">int</span> offset<span style="color:#f92672">,</span> <span style="color:#66d9ef">int</span> count<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-        <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>offset <span style="color:#f92672">&lt;</span> 0<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-            <span style="color:#66d9ef">throw</span> <span style="color:#66d9ef">new</span> StringIndexOutOfBoundsException<span style="color:#f92672">(</span>offset<span style="color:#f92672">);</span>
-        <span style="color:#f92672">}</span>
-        <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>count <span style="color:#f92672">&lt;</span> 0<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-            <span style="color:#66d9ef">throw</span> <span style="color:#66d9ef">new</span> StringIndexOutOfBoundsException<span style="color:#f92672">(</span>count<span style="color:#f92672">);</span>
-        <span style="color:#f92672">}</span>
-        <span style="color:#75715e">// Note: offset or count might be near -1&gt;&gt;&gt;1.
-</span><span style="color:#75715e"></span>        <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>offset <span style="color:#f92672">&gt;</span> value<span style="color:#f92672">.</span><span style="color:#a6e22e">length</span> <span style="color:#f92672">-</span> count<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-            <span style="color:#66d9ef">throw</span> <span style="color:#66d9ef">new</span> StringIndexOutOfBoundsException<span style="color:#f92672">(</span>offset <span style="color:#f92672">+</span> count<span style="color:#f92672">);</span>
-        <span style="color:#f92672">}</span>
-        <span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">value</span> <span style="color:#f92672">=</span> Arrays<span style="color:#f92672">.</span><span style="color:#a6e22e">copyOfRange</span><span style="color:#f92672">(</span>value<span style="color:#f92672">,</span> offset<span style="color:#f92672">,</span> offset<span style="color:#f92672">+</span>count<span style="color:#f92672">);</span>
-    <span style="color:#f92672">}</span>
-
-    <span style="color:#75715e">// ...
-</span><span style="color:#75715e"></span>
-<span style="color:#75715e">/**
-</span><span style="color:#75715e">     * Returns a string that is a substring of this string. The
-</span><span style="color:#75715e">     * substring begins at the specified {@code beginIndex} and
-</span><span style="color:#75715e">     * extends to the character at index {@code endIndex - 1}.
-</span><span style="color:#75715e">     * Thus the length of the substring is {@code endIndex-beginIndex}.
-</span><span style="color:#75715e">     * &lt;p&gt;
-</span><span style="color:#75715e">     * Examples:
-</span><span style="color:#75715e">     * &lt;blockquote&gt;&lt;pre&gt;
-</span><span style="color:#75715e">     * &#34;hamburger&#34;.substring(4, 8) returns &#34;urge&#34;
-</span><span style="color:#75715e">     * &#34;smiles&#34;.substring(1, 5) returns &#34;mile&#34;
-</span><span style="color:#75715e">     * &lt;/pre&gt;&lt;/blockquote&gt;
-</span><span style="color:#75715e">     *
-</span><span style="color:#75715e">     * @param      beginIndex   the beginning index, inclusive.
-</span><span style="color:#75715e">     * @param      endIndex     the ending index, exclusive.
-</span><span style="color:#75715e">     * @return     the specified substring.
-</span><span style="color:#75715e">     * @exception  IndexOutOfBoundsException  if the
-</span><span style="color:#75715e">     *             {@code beginIndex} is negative, or
-</span><span style="color:#75715e">     *             {@code endIndex} is larger than the length of
-</span><span style="color:#75715e">     *             this {@code String} object, or
-</span><span style="color:#75715e">     *             {@code beginIndex} is larger than
-</span><span style="color:#75715e">     *             {@code endIndex}.
-</span><span style="color:#75715e">     */</span>
-    <span style="color:#66d9ef">public</span> String <span style="color:#a6e22e">substring</span><span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> beginIndex<span style="color:#f92672">,</span> <span style="color:#66d9ef">int</span> endIndex<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-        <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>beginIndex <span style="color:#f92672">&lt;</span> 0<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-            <span style="color:#66d9ef">throw</span> <span style="color:#66d9ef">new</span> StringIndexOutOfBoundsException<span style="color:#f92672">(</span>beginIndex<span style="color:#f92672">);</span>
-        <span style="color:#f92672">}</span>
-        <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>endIndex <span style="color:#f92672">&gt;</span> value<span style="color:#f92672">.</span><span style="color:#a6e22e">length</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-            <span style="color:#66d9ef">throw</span> <span style="color:#66d9ef">new</span> StringIndexOutOfBoundsException<span style="color:#f92672">(</span>endIndex<span style="color:#f92672">);</span>
-        <span style="color:#f92672">}</span>
-        <span style="color:#66d9ef">int</span> subLen <span style="color:#f92672">=</span> endIndex <span style="color:#f92672">-</span> beginIndex<span style="color:#f92672">;</span>
-        <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>subLen <span style="color:#f92672">&lt;</span> 0<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-            <span style="color:#66d9ef">throw</span> <span style="color:#66d9ef">new</span> StringIndexOutOfBoundsException<span style="color:#f92672">(</span>subLen<span style="color:#f92672">);</span>
-        <span style="color:#f92672">}</span>
-        <span style="color:#66d9ef">return</span> <span style="color:#f92672">((</span>beginIndex <span style="color:#f92672">==</span> 0<span style="color:#f92672">)</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#f92672">(</span>endIndex <span style="color:#f92672">==</span> value<span style="color:#f92672">.</span><span style="color:#a6e22e">length</span><span style="color:#f92672">))</span> <span style="color:#f92672">?</span> <span style="color:#66d9ef">this</span>
-                <span style="color:#f92672">:</span> <span style="color:#66d9ef">new</span> String<span style="color:#f92672">(</span>value<span style="color:#f92672">,</span> beginIndex<span style="color:#f92672">,</span> subLen<span style="color:#f92672">);</span>
-    <span style="color:#f92672">}</span>
-
-    <span style="color:#75715e">// ...
-</span><span style="color:#75715e"></span>
-<span style="color:#f92672">}</span>
-</code></pre></div><p>The auther&rsquo;s comment<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>:
-<!-- raw HTML omitted -->Card<!-- raw HTML omitted --></p>
-<!-- raw HTML omitted -->
-<section class="footnotes" role="doc-endnotes">
-<hr>
-<ol>
-<li id="fn:1" role="doc-endnote">
-<p><a href="http://java-performance.info/changes-to-string-java-1-7-0_06/">http://java-performance.info/changes-to-string-java-1-7-0_06/</a>&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
-</li>
-<li id="fn:2" role="doc-endnote">
-<p><a href="https://www.reddit.com/r/programming/comments/1qw73v/til_oracle_changed_the_internal_string/cdhb77f/">https://www.reddit.com/r/programming/comments/1qw73v/til_oracle_changed_the_internal_string/cdhb77f/</a>&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
-</li>
-</ol>
-</section>
+</code></pre><p>From this it shouls be a simple task to update your scanns. Tips are to create a namespaces with your aws scanners and then simple delete that namespace to remove all scanners. And then run this script to add the new.
+In that way the scanners are always updated.</p>
 
     </div>
   </article>
@@ -439,7 +297,16 @@ Meanwhile, this feature may cause <strong>memory leak</strong><sup id="fnref:1">
 
     
     <div id="toc-footer" style="display: none">
-      <nav id="TableOfContents"></nav>
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#keep-your-aws-targets-synced">Keep your aws targets synced</a>
+      <ul>
+        <li><a href="#find-your-public-ip">Find your public ip</a></li>
+        <li><a href="#add-scanner-to-thoose-is-now-simple">Add scanner to thoose is now simple</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
     </div>
     
 
@@ -487,7 +354,7 @@ Meanwhile, this feature may cause <strong>memory leak</strong><sup id="fnref:1">
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fsamma.io%2fposts%2f2011-06-02-keep-your-aws-secure%2f&name=Keep%20Your%20AWS%20service%20secure&description=Before%201.7.0_06%2c%20String%20has%204%20non%20static%20field%3a%0a%20char%5b%5d%20value%20int%5b%5d%20offset%20int%20count%20int%20hash%20%20Subing.substring%20create%20a%20String%20by%20sharing%20the%20original%20String%26rsquo%3bs%20internal%20char%5b%5d%20value%20and%20setting%20offset.%20This%20saves%20memory%20and%20makes%20String.substring%20run%20in%20a%20constant%20time%28%24O%281%29%24%29.%20Meanwhile%2c%20this%20feature%20may%20cause%20memory%20leak1.%0ahttp%3a%2f%2fhg.openjdk.java.net%2fjdk6%2fjdk6%2fjdk%2ffile%2f8deef18bb749%2fsrc%2fshare%2fclasses%2fjava%2flang%2fString.java%0apublic%20final%20class%20String%20implements%20java.io.Serializable%2c%20Comparable%26lt%3bString%26gt%3b%2c%20CharSequence%20%7b%20%2f%2a%2a%20The%20value%20is%20used%20for%20character%20storage.%20%2a%2f%20private%20final%20char%20value%5b%5d%3b%20%2f%2a%2a%20The%20offset%20is%20the%20first%20index%20of%20the%20storage%20that%20is%20used." aria-label="Tumblr">
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fsamma.io%2fposts%2f2011-06-02-keep-your-aws-secure%2f&name=Keep%20Your%20AWS%20service%20secure&description=Keep%20your%20aws%20targets%20synced%20In%20AWS%20sometimes%20you%20get%20alot%20of%20ec2%20and%20public%20ip%20fast.%20And%20you%20may%20want%20to%20keep%20them%20scanned%20and%20up%20to%20sync%20So%20then%20its%20some%20easy%20task%20you%20can%20do.%20You%20will%20also%20see%20a%20list%20of%20ip%20in%20grafana%20and%20kibana%0aFind%20your%20public%20ip%20In%20your%20aws%20cli%20run%20this%20command%20to%20get%20your%20public%20ip%0aaws%20ec2%20describe-instances%20%7c%20grep%20PublicIpAddress%20%7c%20grep%20-o%20-P%20%26quot%3b%5cd%2b%5c." aria-label="Tumblr">
       <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
     </a>
   </li>

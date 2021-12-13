@@ -13,10 +13,9 @@
       <pubDate>Wed, 02 Jun 2021 09:00:00 +0000</pubDate>
       
       <guid>https://samma.io/posts/2011-06-02-keep-your-aws-secure/</guid>
-      <description>Before 1.7.0_06, String has 4 non static field:
- char[] value int[] offset int count int hash  Subing.substring create a String by sharing the original String&amp;rsquo;s internal char[] value and setting offset. This saves memory and makes String.substring run in a constant time($O(1)$). Meanwhile, this feature may cause memory leak1.
-http://hg.openjdk.java.net/jdk6/jdk6/jdk/file/8deef18bb749/src/share/classes/java/lang/String.java
-public final class String implements java.io.Serializable, Comparable&amp;lt;String&amp;gt;, CharSequence { /** The value is used for character storage. */ private final char value[]; /** The offset is the first index of the storage that is used.</description>
+      <description>Keep your aws targets synced In AWS sometimes you get alot of ec2 and public ip fast. And you may want to keep them scanned and up to sync So then its some easy task you can do. You will also see a list of ip in grafana and kibana
+Find your public ip In your aws cli run this command to get your public ip
+aws ec2 describe-instances | grep PublicIpAddress | grep -o -P &amp;quot;\d+\.</description>
     </item>
     
   </channel>
