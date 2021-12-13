@@ -6,7 +6,19 @@
     <description>Recent content in mattias on Samma.io</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 06 Dec 2021 09:00:00 +0000</lastBuildDate><atom:link href="https://samma.io/tags/mattias/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 13 Dec 2021 09:00:00 +0000</lastBuildDate><atom:link href="https://samma.io/tags/mattias/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How a Scanner is working</title>
+      <link>https://samma.io/posts/2021-12-13-how-a-scanner-is-working/</link>
+      <pubDate>Mon, 13 Dec 2021 09:00:00 +0000</pubDate>
+      
+      <guid>https://samma.io/posts/2021-12-13-how-a-scanner-is-working/</guid>
+      <description>How a scanner is working This will explain how a samma scanner is working.
+Start the scanner The first part of the scanner is a wrapper that starts the scan. These are on some scanner a python scripts that read the ENV values in the docker. And then wraps the scanner commands after these settings.
+this is one of the commands that start the Nmap scanner
+process = subprocess.Popen(&#39;sudo /bin/nmap -sV --script http-enum {0} -oX /out/result.</description>
+    </item>
+    
     <item>
       <title>Why i built Samma</title>
       <link>https://samma.io/posts/2021-12-06-why-i-built-samma/</link>

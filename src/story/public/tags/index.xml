@@ -6,20 +6,11 @@
     <description>Recent content in Tags on Samma.io</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 06 Dec 2021 09:00:00 +0000</lastBuildDate><atom:link href="https://samma.io/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>DevSecOps</title>
-      <link>https://samma.io/tags/devsecops/</link>
-      <pubDate>Mon, 06 Dec 2021 09:00:00 +0000</pubDate>
-      
-      <guid>https://samma.io/tags/devsecops/</guid>
-      <description></description>
-    </item>
-    
+    <lastBuildDate>Mon, 13 Dec 2021 09:00:00 +0000</lastBuildDate><atom:link href="https://samma.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>mattias</title>
       <link>https://samma.io/tags/mattias/</link>
-      <pubDate>Mon, 06 Dec 2021 09:00:00 +0000</pubDate>
+      <pubDate>Mon, 13 Dec 2021 09:00:00 +0000</pubDate>
       
       <guid>https://samma.io/tags/mattias/</guid>
       <description></description>
@@ -28,9 +19,18 @@
     <item>
       <title>samma</title>
       <link>https://samma.io/tags/samma/</link>
-      <pubDate>Mon, 06 Dec 2021 09:00:00 +0000</pubDate>
+      <pubDate>Mon, 13 Dec 2021 09:00:00 +0000</pubDate>
       
       <guid>https://samma.io/tags/samma/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>DevSecOps</title>
+      <link>https://samma.io/tags/devsecops/</link>
+      <pubDate>Mon, 06 Dec 2021 09:00:00 +0000</pubDate>
+      
+      <guid>https://samma.io/tags/devsecops/</guid>
       <description></description>
     </item>
     
