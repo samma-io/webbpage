@@ -3,6 +3,14 @@
 Main site for samma.io
 
 
+## You need this
+
+You need to have docker and docker-compose installed on your comuter
+
+https://docs.docker.com/get-docker/
+
+https://docs.docker.com/compose/install/
+
 ## Hugo CMS 
 this weppgae is build with hugo CMS. To read more go to hugo cms webpage
 
