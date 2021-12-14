@@ -29,5 +29,24 @@ When done push you changes back to git in the main branch.
 Your changes will be deployed.
 
 
+First build the page with 
+
+```
+docker-compose run hugo hugo
+```
+
+
+
+Commi all changes and push back
+
+```
+git commit -a -m "My change note"
+
+
+git push origin main
+```
+
+
+When a new push to main is done. The webbpage is automated deployed
 
 
